@@ -1,4 +1,3 @@
-
 (function($){
 $.TOC = function(el, scope, options){
 	var toc = this;
@@ -11,7 +10,7 @@ $.TOC = function(el, scope, options){
 			if (options.hasOwnProperty(key)) { 
 				if(options[key] == ""){
 					delete options[key]; 
-				}
+				}d
 			} 
 		}
 		toc.options = $.extend({},$.TOC.defaultOptions, options);
@@ -59,7 +58,7 @@ $.TOC = function(el, scope, options){
 				if(i > 0 || ( i == 0 && depth != toc.current_depth)){
 					toc.addItem(depth, i);
 				}
-				toc.html += toc.formatLink(this, depthClass, i) + "\n";
+				toc.html += toc.formatLink(this, depth, i) + "\n";
 			} else {
 				toc.html += "<"+toc.options.itemType+">\n" + toc.formatLink(this, depthClass, i) + "\n" + "</"+toc.options.itemType+">\n"; 
 			}
