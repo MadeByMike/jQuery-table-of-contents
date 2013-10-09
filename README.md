@@ -1,4 +1,4 @@
-jQuery-Table-of-Contents
+jQuery Table of Contents
 ========================
 
 On several occasions I've been asked to generate a table of contents using jQuery. This is my attempt at one size fits all plugin.
