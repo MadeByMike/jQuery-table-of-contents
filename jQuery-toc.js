@@ -10,7 +10,7 @@ $.TOC = function(el, scope, options){
 			if (options.hasOwnProperty(key)) { 
 				if(options[key] == ""){
 					delete options[key]; 
-				}d
+				}
 			} 
 		}
 		toc.options = $.extend({},$.TOC.defaultOptions, options);
